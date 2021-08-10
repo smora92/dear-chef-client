@@ -5,7 +5,7 @@ import SignIn from './components/Signin/Signin';
 import RecipeList from './components/RecipeList/RecipeList';
 import RecipeDetails from './components/RecipeDetails/RecipeDetails';
 import SignUp from './components/Signup/Signup';
-import HomePage from './components/Homepage';
+import HomePage from './components/Homepage/Homepage';
 // import { Redirect } from 'react-router-dom';
 
 function App() {
