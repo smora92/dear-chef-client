@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import add from "../../assets/images/add.png";
 import logo from "../../assets/images/logo.jpg";
 import data from "../../assets/data/recipes.json";
-import Card from "../../common/card";
+import Card from "../Common/card";
 import "./recipe-list.css";
 import { useHistory } from "react-router-dom";
 
