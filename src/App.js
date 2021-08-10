@@ -1,11 +1,10 @@
 import React from 'react';
 import { Route, Switch } from "react-router";
-import AddRecipe from './components/add-recipe/AddRecipe';
-import Navbar from './components/navbar/Navbar';
-import SignIn from './components/signin/signin';
-import RecipeList from './components/recipe-list/RecipeList';
-import RecipeDetails from './components/recipe-details/RecipeDetails';
-import SignUp from './components/signup/Signup';
+import AddRecipe from './components/AddRecipe/AddRecipe';
+import SignIn from './components/Signin/Signin';
+import RecipeList from './components/RecipeList/RecipeList';
+import RecipeDetails from './components/RecipeDetails/RecipeDetails';
+import SignUp from './components/Signup/Signup';
 import HomePage from './components/Homepage';
 // import { Redirect } from 'react-router-dom';
 
@@ -17,9 +16,9 @@ function App() {
         <Route exact path="/" component={HomePage} />
         <Route path="/signup" component={SignUp} />
         <Route path="/signin" component={SignIn} />
-        <Route path="/recipe-list" component={RecipeList} />
-        <Route path="/add-recipe" component={AddRecipe} />
-        <Route path="/recipe-details/:id" component={RecipeDetails} />
+        <Route path="/recipelist" component={RecipeList} />
+        <Route path="/addrecipe" component={AddRecipe} />
+        <Route path="/recipedetails/:id" component={RecipeDetails} />
         {/* <Redirect from="/" to="/signup" /> */}
       </Switch>
     </div>
