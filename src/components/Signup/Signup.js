@@ -1,6 +1,6 @@
 import React from "react";
 import "./Signup.css";
-import logo from "../../assets/images/logo.jpeg";
+// import logo from "../../assets/images/logo.jpeg";
 import { useHistory } from "react-router-dom";
 
 const SignUp = () => {
