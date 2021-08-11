@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route } from "react-router";
+import { Route, Switch } from "react-router";
 import AddRecipe from './components/AddRecipe/AddRecipe';
 import SignIn from './components/Signin/Signin';
 import RecipeList from './components/RecipeList/RecipeList';
@@ -13,16 +13,16 @@ function App() {
   return (
     <div className="container">
       {/* <Navbar /> */}
-
-      <Route exact path="/" component={HomePage} />
-      <Route path="/demo" component={Demo} />
-      <Route path="/signup" component={SignUp} />
-      <Route path="/signin" component={SignIn} />
-      <Route path="/recipelist" component={RecipeList} />
-      <Route path="/addrecipe" component={AddRecipe} />
-      <Route path="/recipepage/:id" component={RecipePage} />
-      {/* <Redirect from="/" to="/signup" /> */}
-
+      <Switch>
+        <Route exact path="/" component={HomePage} />
+        <Route path="/demo" component={Demo} />
+        <Route path="/signup" component={SignUp} />
+        <Route path="/signin" component={SignIn} />
+        <Route path="/recipelist" component={RecipeList} />
+        <Route path="/addrecipe" component={AddRecipe} />
+        <Route path="/recipepage/:id" component={RecipePage} />
+        {/* <Redirect from="/" to="/signup" /> */}
+      </Switch>
     </div>
   );
 }

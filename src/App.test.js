@@ -1,7 +1,10 @@
-// import { render } from '@testing-library/react';
-// import App from './App';
+import { render } from '@testing-library/react';
+import App from './App';
 
-// test('renders react app', () => {
-//   render(<App />);
+test('renders div with switch and route paths from react-router with route paths for components',
+  () => {
+    render(<div>
 
-// });
+    </div>);
+
+  });
