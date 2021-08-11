@@ -1,13 +1,214 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Common CSS for all components */
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3f6f7;
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.user-input {
+  width: 100%;
+  padding: 18px 20px;
+  display: inline-block;
+  border: 1px solid #81b861;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.user-input:focus-visible {
+  border: 1px solid #4caf50;
+  outline: none !important;
+  box-shadow: 0 0 10px #167e19;
+}
+
+/* Primary Green Button */
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 200px;
+  margin-top: 16px;
+}
+
+.button-outline {
+  border: 1px solid #4caf50;
+  color: #4caf50;
+  background-color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 4px;
+  min-width: 200px;
+  margin-top: 16px;
+}
+.button-small {
+  border: 1px solid #4caf50;
+  color: #4caf50;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button-medium {
+  border: 1px solid #4caf50;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  padding: 8px;
+  min-width: 100px;
+  border-radius: 4px;
+}
+.button-medium-outline {
+  border: 1px solid #4caf50;
+  color: #4caf50;
+  background-color: white;
+  cursor: pointer;
+  padding: 8px;
+  min-width: 100px;
+  border-radius: 4px;
+}
+
+.button-outline:hover {
+  border: 1px solid #4caf50;
+  color: white;
+  background-color: #4caf50;
+}
+
+/* Primary Green Button Press */
+.button:active {
+  background-color: #39803b;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #00000033;
+  transition: 0.3s;
+  width: 94%;
+  min-height: fit-content;
+  max-height: fit-content;
+  border-radius: 4px;
+  padding: 12px;
+  background-color: white;
+}
+
+.card-clickable:active {
+  cursor: pointer;
+  background-color: #e7ffd9;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.logo-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  border: 1px solid #81b861;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.search-input:focus-visible {
+  border: 1px solid #4caf50;
+  outline: none !important;
+  box-shadow: 0 0 10px #167e19;
+}
+
+.header-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 131px;
+}
+
+/********* SPACING CLASSES ****************/
+
+/* Small Margin */
+.small-top-mar {
+  margin-top: 6px;
+}
+.small-right-mar {
+  margin-right: 6px;
+}
+.small-left-mar {
+  margin-top: 6px;
+}
+.small-bottom-mar {
+  margin-right: 6px;
+}
+
+/* Mediumn Margin */
+.med-mar {
+  margin: 10px;
+}
+.med-top-mar {
+  margin-top: 10px;
+}
+.med-right-mar {
+  margin-right: 10px;
+}
+.med-left-mar {
+  margin-left: 10px;
+}
+.med-bottom-mar {
+  margin-bottom: 10px;
+}
+
+/* Large Margin */
+.large-mar {
+  margin: 15px;
+}
+.large-top-mar {
+  margin-top: 15px;
+}
+.large-right-mar {
+  margin-right: 15px;
+}
+.large-left-mar {
+  margin-top: 15px;
+}
+.large-bottom-mar {
+  margin-bottom: 15px;
 }

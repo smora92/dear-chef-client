@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import close from "../../assets/images/close.png";
 import "./AddComment.css";

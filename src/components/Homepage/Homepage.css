@@ -28,3 +28,11 @@
     font-size: 1em;
   }
 } */
+.homepage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  height: 100vh;
+}

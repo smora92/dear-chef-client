@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import add from "../../assets/images/add.png";
-import logo from "../../assets/images/logo.jpg";
+import logo from "../../assets/images/logo.jpeg";
 import data from "../../assets/data/recipes.json";
-import Card from "../Common/card";
+import Card from "../Common/Card";
 import "./RecipeList.css";
 import { useHistory } from "react-router-dom";
 
 function RecipeList() {
     const history = useHistory();
 
-    const [recipes, setRecipes] = useState(data);
+    const [recipes] = useState(data);
     const [filteredRecipes, setFilteredRecipes] = useState(recipes);
     const [searchValue, setSearchValue] = useState("");
 
@@ -25,8 +25,9 @@ function RecipeList() {
 
     /**Navigation to recipe details page */
     const handleRecipeSelection = (recipe) => {
-        history.push("/recipe-details/" + recipe.id);
+        history.push("/recipepage/" + recipe.id);
     };
+
 
     return (
         <>
@@ -42,7 +43,7 @@ function RecipeList() {
                     src={add}
                     className="back-arrow"
                     alt="back arrow"
-                    onClick={() => history.push("/add-recipe")}
+                    onClick={() => history.push("/addrecipe")}
                 />
             </div>
 

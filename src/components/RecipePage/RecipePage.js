@@ -3,7 +3,7 @@ import { useHistory, useParams } from "react-router-dom";
 import backArrow from "../../assets/images/back-arrow.png";
 import data from "../../assets/data/recipes.json";
 import "./RecipePage.css";
-import AddComment from "../add-comment/AddComment";
+import AddComment from "../AddComment/AddComment";
 
 export default function RecipeDetails() {
     const history = useHistory();
